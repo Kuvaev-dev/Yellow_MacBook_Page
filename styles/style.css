@@ -1,0 +1,237 @@
+/* Animated Button */
+.shine-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #feea37;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #feea37;
+    transition: .2s ease-in-out;
+}
+.shine-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+.shine-button:hover {
+    background: #feea37;
+    color: #fff;
+}
+.shine-button:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+
+/* Main Menu */
+#menuDiv{
+    position: relative;
+    margin-left: 12%;
+    margin-bottom: 10%;
+}
+div .menuItem{
+    float: left;
+    background-color: whitesmoke;
+    padding: 2%;
+}
+.menuItemList{
+    visibility: unset;
+    font-size: 0px;
+    position: unset;
+    display: grid;  
+    grid-auto-columns: initial;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch; 
+}
+.menuItem:hover{
+    border-bottom: 5%;
+    border-color: lawngreen;
+}
+.menuItem:hover .menuItemList{
+    visibility: visible;
+    font-size: 12pt;
+}
+
+/* Main Body */
+.macImg{
+    margin: 5px 0px;
+    width: 47%;
+    height: 90%;
+    float: right;
+    background-repeat: repeat-x;
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+}
+.macName{
+    margin: 0px 15px;
+    font-kerning: none;
+    font-size: 15pt;
+    font-style: normal;
+}
+.block{
+    width: 30%;
+    height: 35%;
+    padding: 1%;
+    margin: 8px;
+    border-radius: 15px;
+    border-width: 2px;
+    background-color: white;
+    float: left;
+}
+.price{
+    margin: 15px 15px;
+    font-kerning: none;
+    font-size: 15pt;
+    font-style: normal;
+    text-align: justify;
+}
+.newFont{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: unset;
+    font-size: 25;
+    text-align: center;
+    
+}
+
+/* Transition */
+* {
+    transition: all .1s;
+}
+
+/* Desktops */
+@media screen and (max-width : 1000px) {
+    .phoneImg  {
+        width: 100px;
+        height: 130px;
+    }
+    .phoneName {
+        font-size: 10;
+    }
+    .stars {
+        margin-left: 9px;
+        width: 50px;
+        height: 30px;
+    }
+    .block {
+        margin-left: 30px;
+        width: 200px;
+        height: 140px;
+    }
+    .price {
+        font-size: 10;
+    }
+    .buyBtn {
+        height: 40px;
+    }
+    .newFont{
+        font-size: 10;
+    }
+    .menuItem{
+        font-size: 10;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width : 768px) {
+    .phoneImg  {
+        width: 70px;
+        height: 100px;
+    }
+    .phoneName {
+        font-size: 10;
+    }
+    .block {
+        width: 200px;
+        height: 120px;
+        margin-left: 2%;
+    }
+    .price {
+        font-size: 10;
+    }
+    .buyBtn {
+        height: 35px;
+    }
+    .menuItem{
+        font-size: 6;
+    }
+    .block{
+        margin-left: 40px;
+        width: 170px;
+        height: 110px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width : 480px) {
+    .phoneImg  {
+        width: 60px;
+        height: 80px;
+    }
+    .phoneName {
+        font-size: 7;
+    }
+    .price {
+        font-size: 7;
+    }
+    .block{
+        height: 100px;
+        width:140px;
+    }
+    .buyBtn{
+        height: 30px;
+        width: 30px;
+    }
+    .stars{
+        width: 40px;
+        height: 20px;
+    }
+    .block{
+        height: 90px;
+    }
+    .menuItem{
+        font-size: 7;
+    }
+}
+
+/* Monitor Adapting */
+@media screen and (max-width : 380px) {
+    .phoneImg  {
+        width: 60px;
+        height: 80px;
+    }
+    .phoneName {
+        font-size: 7;
+    }
+    .price {
+        font-size: 7;
+    }
+    .block{
+        height: 100px;
+        width: 140px;
+    }
+    .buyBtn{
+        height: 30px;
+        width: 30px;
+    }
+    .stars{
+        width: 40px;
+        height: 20px;
+    }
+    .block{
+        height: 90px;
+    }
+    .menuItem{
+        font-size: 5;
+    }
+}
