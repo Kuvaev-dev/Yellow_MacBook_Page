@@ -3,7 +3,7 @@
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
-    margin: 10px 20px;
+    margin: 10px 15px;
     position: relative;
     overflow: hidden;
     border: 2px solid #feea37;
@@ -65,8 +65,8 @@ div .menuItem{
 /* Main Body */
 .macImg{
     margin: 5px 0px;
-    width: 47%;
-    height: 90%;
+    width: 30%;
+    height: 70%;
     float: right;
     background-repeat: repeat-x;
     image-rendering: optimizeQuality;
@@ -75,13 +75,13 @@ div .menuItem{
 .macName{
     margin: 0px 15px;
     font-kerning: none;
-    font-size: 15pt;
+    font-size: 14pt;
     font-style: normal;
 }
 .block{
-    width: 30%;
-    height: 35%;
-    padding: 1%;
+    width: 28%;
+    height: 30%;
+    padding: 2%;
     margin: 8px;
     border-radius: 15px;
     border-width: 2px;
@@ -99,9 +99,8 @@ div .menuItem{
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     font-style: unset;
-    font-size: 25;
+    font-size: 20;
     text-align: center;
-    
 }
 
 /* Transition */
@@ -111,17 +110,12 @@ div .menuItem{
 
 /* Desktops */
 @media screen and (max-width : 1000px) {
-    .phoneImg  {
+    .macImg  {
         width: 100px;
         height: 130px;
     }
-    .phoneName {
+    .macName {
         font-size: 10;
-    }
-    .stars {
-        margin-left: 9px;
-        width: 50px;
-        height: 30px;
     }
     .block {
         margin-left: 30px;
@@ -131,7 +125,7 @@ div .menuItem{
     .price {
         font-size: 10;
     }
-    .buyBtn {
+    .shine-button {
         height: 40px;
     }
     .newFont{
@@ -144,11 +138,11 @@ div .menuItem{
 
 /* Tablets */
 @media screen and (max-width : 768px) {
-    .phoneImg  {
+    .macImg  {
         width: 70px;
         height: 100px;
     }
-    .phoneName {
+    .macName {
         font-size: 10;
     }
     .block {
@@ -159,7 +153,7 @@ div .menuItem{
     .price {
         font-size: 10;
     }
-    .buyBtn {
+    .shine-button {
         height: 35px;
     }
     .menuItem{
@@ -174,11 +168,11 @@ div .menuItem{
 
 /* Phones */
 @media screen and (max-width : 480px) {
-    .phoneImg  {
+    .macImg  {
         width: 60px;
         height: 80px;
     }
-    .phoneName {
+    .macName {
         font-size: 7;
     }
     .price {
@@ -188,13 +182,9 @@ div .menuItem{
         height: 100px;
         width:140px;
     }
-    .buyBtn{
+    .shine-button{
         height: 30px;
         width: 30px;
-    }
-    .stars{
-        width: 40px;
-        height: 20px;
     }
     .block{
         height: 90px;
@@ -206,11 +196,11 @@ div .menuItem{
 
 /* Monitor Adapting */
 @media screen and (max-width : 380px) {
-    .phoneImg  {
+    .macImg  {
         width: 60px;
         height: 80px;
     }
-    .phoneName {
+    .macName {
         font-size: 7;
     }
     .price {
@@ -220,13 +210,9 @@ div .menuItem{
         height: 100px;
         width: 140px;
     }
-    .buyBtn{
+    .shine-button{
         height: 30px;
         width: 30px;
-    }
-    .stars{
-        width: 40px;
-        height: 20px;
     }
     .block{
         height: 90px;
